@@ -41,6 +41,7 @@ FROM EmployeeSalary
 
 SELECT *
 FROM [SQL Tutorial].dbo.EmployeeSalary
-Database.dbo.Table
+
+--Database.dbo.Table
 
 
