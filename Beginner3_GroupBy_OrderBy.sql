@@ -8,7 +8,7 @@ Where Age > 30
 GROUP BY Gender, AGE
 ORDER BY Gender DESC, AGE DESC
 
-Gender ´ë½Å¿¡ 1, AGE ´ë½Å¿¡ 2·Î Ç¥Çö°¡´É
+Gender ëŒ€ì‹ ì— 1, AGE ëŒ€ì‹ ì— 2ë¡œ í‘œí˜„ê°€ëŠ¥
 SELECT Gender, Age, Count(Gender) AS CountGender
 From EmployeeDemographic
 Where Age > 30
