@@ -1,10 +1,14 @@
+/*
+Percentage of people infected, dead, and vaccinated
+*/
+
 Select *
 From PortfolioProject.dbo.CovidDeaths
 Where continent is not null -- to exclude location that is continent(world, asia, africa...)
 Order by 3, 4
 
 --Select *
---From PortfolioProject..CovidVaccinations$
+--From PortfolioProject..CovidVaccinations
 --Order by 3, 4
 
 --Select data that we are going to use
@@ -15,7 +19,7 @@ Where continent is not null
 Order by 1, 2
 
 -- Looking at Total Cases vs Total Deaths
--- Shows likelihood od dying if you contract convid in your country
+-- Shows likelihood of dying if you contract covid in your country
 Select Location, date, total_cases, total_deaths, (CONVERT(float, total_deaths)/Nullif(convert(float, total_cases), 0))*100 as DeathPercentage
 From PortfolioProject..CovidDeaths
 Where Location like '%south korea%'
